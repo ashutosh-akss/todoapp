@@ -1,0 +1,56 @@
+<a href="https://github.com/{{repo}}/edit/master/{{file}}" class="improve-docs"><i class="icon-edit"> </i>Improve this doc</a><a href="https://github.com/{{repo}}/blob/{{sha}}/{{file}}#L{{codeline}}" class="view-source"><i class="icon-eye-open"> </i>View source</a><h1><code ng:non-bindable="">localDB</code>
+<div><span class="hint">service in module <code ng:non-bindable="">Vidyartha</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="vidyartha-localdb-page"><p>Simulates database CRUD functions using localstorage</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/api/ng.$q">$q</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><a href="https://github.com/{{repo}}/blob/{{sha}}/{{file}}#L{{codeline}}" class="view-source icon-eye-open"> </a><h3 id="methods_clearall">clearAll()</h3>
+<div class="clearall"><div class="vidyartha-localdb-clearall-page"><p>Clears localStorage</p>
+</div></div>
+</li>
+<li><a href="https://github.com/{{repo}}/blob/{{sha}}/{{file}}#L{{codeline}}" class="view-source icon-eye-open"> </a><h3 id="methods_create">create(task)</h3>
+<div class="create"><div class="vidyartha-localdb-create-page"><p>Created a new task and saves in localstorage</p>
+</div><h5 id="methods_create_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>task</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="vidyartha-localdb-create-page"><p>task object</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><a href="https://github.com/{{repo}}/blob/{{sha}}/{{file}}#L{{codeline}}" class="view-source icon-eye-open"> </a><h3 id="methods_delete">delete(task)</h3>
+<div class="delete"><div class="vidyartha-localdb-delete-page"><p>Deletes given task from taskList array and updated localDB</p>
+</div><h5 id="methods_delete_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>task</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="vidyartha-localdb-delete-page"><p>task Object</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><a href="https://github.com/{{repo}}/blob/{{sha}}/{{file}}#L{{codeline}}" class="view-source icon-eye-open"> </a><h3 id="methods_fetch">fetch(db_name)</h3>
+<div class="fetch"><div class="vidyartha-localdb-fetch-page"><p>fetches all tasks from localStorage.
+db_name param is optional </p>
+</div><h5 id="methods_fetch_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>db_name</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="vidyartha-localdb-fetch-page"><p>Database name</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><a href="https://github.com/{{repo}}/blob/{{sha}}/{{file}}#L{{codeline}}" class="view-source icon-eye-open"> </a><h3 id="methods_getcurrenttimestamp">getCurrentTimestamp()</h3>
+<div class="getcurrenttimestamp"><div class="vidyartha-localdb-getcurrenttimestamp-page"><p>returns current timestamp</p>
+</div><h5 id="methods_getcurrenttimestamp_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-timestamp">Timestamp</a></td><td><div class="vidyartha-localdb-getcurrenttimestamp-page"><p>timestamp  current unix timestamp</p>
+</div></td></tr></table></div>
+</li>
+<li><a href="https://github.com/{{repo}}/blob/{{sha}}/{{file}}#L{{codeline}}" class="view-source icon-eye-open"> </a><h3 id="methods_gettaskindex">getTaskIndex(task)</h3>
+<div class="gettaskindex"><div class="vidyartha-localdb-gettaskindex-page"><p>returns index of task in localDB</p>
+</div><h5 id="methods_gettaskindex_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>task</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="vidyartha-localdb-gettaskindex-page"><p>task object</p>
+</div></td></tr></tbody></table><h5 id="methods_gettaskindex_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-integer">Integer</a></td><td><div class="vidyartha-localdb-gettaskindex-page"><p>task_index Index of task in localDB</p>
+</div></td></tr></table></div>
+</li>
+<li><a href="https://github.com/{{repo}}/blob/{{sha}}/{{file}}#L{{codeline}}" class="view-source icon-eye-open"> </a><h3 id="methods_sync">sync(db_name)</h3>
+<div class="sync"><div class="vidyartha-localdb-sync-page"><p>Saves taskList array into localstorage, this functions is called after every crud operation</p>
+</div><h5 id="methods_sync_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>db_name</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="vidyartha-localdb-sync-page"><p>database name</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><a href="https://github.com/{{repo}}/blob/{{sha}}/{{file}}#L{{codeline}}" class="view-source icon-eye-open"> </a><h3 id="methods_update">update()</h3>
+<div class="update"><div class="vidyartha-localdb-update-page"><p>Invokes sync() method of localDB</p>
+</div></div>
+</li>
+</ul>
+</div>
+</div>

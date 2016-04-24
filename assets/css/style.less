@@ -1,0 +1,125 @@
+
+// Variables
+
+@text-color:#fff;
+@background-color:#478999;
+@red:#9A0000;
+@green:#17A05D;
+@blue:#007AF2;
+@white:#fff;
+@background-url:'../images/bg-default.jpg';
+
+// Mixins
+.translucant(@opacity:0.7){
+	background:rgba(255,255,255,@opacity);
+}
+
+.placeholderColor(@color:green){
+	input::-webkit-input-placeholder {
+	    color: @color !important;
+	}
+	input:-moz-placeholder {
+	    color: @color !important;
+	}
+	input::-moz-placeholder {
+	    color: @color !important;
+	}
+	input:-ms-input-placeholder {
+	    color: @color !important;
+	}
+}
+
+// Less Code
+
+body {
+	background:url(@background-url);
+}
+
+h1.heading {
+	color:@text-color;
+}
+
+
+
+.nav-tabs { 
+	border-bottom: 2px solid #DDD; 
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+	border-width: 0; 
+}
+
+.nav-tabs > li > a { 
+	border: none; color: #666; 
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover {
+	 border: none;
+	 color: @blue !important;
+	 background: transparent; 
+}
+
+
+.nav-tabs > li > a::after {
+	content: ""; 
+	background: @blue;
+	height: 2px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: -1px;
+	transition: all 250ms ease 0s;
+	transform: scale(0);
+}
+
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+	transform: scale(1);
+	background:@blue;
+}
+
+.tab-nav > li > a::after {
+	background: #21527d none repeat scroll 0% 0%;
+	color: @white;
+	
+}
+
+.tab-pane {
+	padding: 15px 0;
+}
+
+/*.tab-content{
+	padding:20px
+}
+*/
+
+.card {
+	background: none repeat scroll 0% 0%;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+	margin-bottom: 30px;
+	.translucant()
+}
+
+input.task {
+	padding:5px;
+	background:transparent;
+	width:100%;
+	border:solid 2px @blue;
+	transition: box-shadow 0.3s, border 0.3s;
+}
+
+.placeholderColor(#fff);
+
+div.translucant{
+	background-color: #fff;
+	margin-bottom:15px;
+    .translucant;
+}
+div.list-row{
+	//background-color: @green;	
+}
+div.task_time{
+	float:right;
+}
+div.delete-button{
+	float:right;
+}

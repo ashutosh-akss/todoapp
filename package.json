@@ -1,0 +1,29 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "todo app for Vidyartha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashutosh-akss/todoapp.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "Ashutosh Kumar Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashutosh-akss/todoapp/issues"
+  },
+  "homepage": "https://github.com/ashutosh-akss/todoapp#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+<div class="col-md-12">	
+	<div class="col-md-8">
+		<input type="checkbox" ng-model="task.completed" ng-click="task_functions.updateTask(task)"/>
+		{{task.task}}
+	</div>
+	<div class="col-md-3">
+		<div class="task_time" am-time-ago="task.task_id * 1000"></div>
+	</div>
+	<div class="col-md-1">
+		<div class="delete-button" ng-click="task_functions.deleteTask(task)">
+			 	<a href="#">
+		          <span class="glyphicon glyphicon glyphicon-remove-sign"></span>
+		        </a>
+			 </div>
+	</div>
+</div>
