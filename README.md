@@ -1,12 +1,21 @@
 
 # Todo App in AngularJS
 
-Todo App is written in AngularJS, It includes localDB factory which simulates database CRUD operations from locaStorage
+Todo App is written in AngularJS, It includes localDB factory which simulates database CRUD operations from localStorage
 
 
 ## Authors
 
-Originally created by [Ashutosh Kumar Singh](https://facebook.com/ashutosh.akss). More features will be added soon
+Created by [Ashutosh Kumar Singh](https://facebook.com/ashutosh.akss). More features will be added soon
+
+
+## Quick Points
+* App uses Grunt for automating tasks
+* CSS is generated from Less `assets/css/style.less`
+* All CSS & JS files are minified into `todo.min.css` & `todo.min.js` 
+* `todo.min.js` includes `jQuery`,`angular.js`,`bootstrap.js`,`toastr.js`,`moment.js`,`jquery-confirm.js` and `angular-moment.js`
+* To do any changes in css, run `grunt serve` and change `assets/css/style.less` `grunt-watche` module will automate Less to css conversion and minification of css
+
 
 ## Development
 

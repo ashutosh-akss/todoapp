@@ -47,6 +47,15 @@ NG_DOCS={
       "moduleName": "Vidyartha",
       "shortDescription": "Simulates database CRUD functions using localstorage",
       "keywords": "$q api array called clearall clears create created crud current database db_name delete deletes fetch fetches functions getcurrenttimestamp gettaskindex invokes localdb localstorage method object operation optional param returns saves service simulates sync task task_index tasklist tasks timestamp unix update updated vidyartha"
+    },
+    {
+      "section": "api",
+      "id": "Vidyartha.taskRow",
+      "shortName": "Vidyartha.taskRow",
+      "type": "directive",
+      "moduleName": "Vidyartha",
+      "shortDescription": "Simulates database CRUD functions using localstorage",
+      "keywords": "api crud database directive functions localstorage simulates taskrow vidyartha"
     }
   ],
   "apis": {
